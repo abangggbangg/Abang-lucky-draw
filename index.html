@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>幸運抽獎活動</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>幸運抽獎活動</h1>
+        <div class="prizes">
+            <div class="prize">
+                <img src="https://www.machines.com.my/cdn/shop/files/iPad_Air_11_M2_WiFi_Blue_PDP_Image_Position_1b__GBEN_e9b7d0ec-4b46-4ce9-bceb-2a9397b59e12.jpg?v=1716470314&width=1680" alt="iPad Air M2">
+                <h2>大獎: iPad Air M2</h2>
+                <p class="prize-number" id="grandPrizeNumber"></p>
+            </div>
+            <div class="prize">
+                <img src="https://media.ldlc.com/r1600/ld/products/00/05/95/95/LD0005959591.jpg" alt="Nintendo Switch">
+                <h2>二獎: Nintendo Switch</h2>
+                <p class="prize-number" id="secondPrizeNumber"></p>
+            </div>
+            <div class="prize">
+                <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MME73?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1632861342000" alt="AirPods 3">
+                <h2>三獎: AirPods 3</h2>
+                <p class="prize-number" id="thirdPrizeNumber"></p>
+            </div>
+            <div class="prize">
+                <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MX2D3?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1713841707336" alt="Apple Pencil Pro">
+                <h2>四獎: Apple Pencil Pro</h2>
+                <p class="prize-number" id="fourthPrizeNumber"></p>
+            </div>
+            <div class="prize">
+                <img src="https://instax.com/mini_12/assets/images/pic_hero_main_02.webp" alt="Insta X Mini 12">
+                <h2>五獎: Insta X Mini 12</h2>
+                <p class="prize-number" id="fifthPrizeNumber"></p>
+            </div>
+        </div>
+        <button onclick="startDraw()">開始抽獎</button>
+        <button onclick="draw()">顯示中獎號碼</button>
+        <div id="result"></div>
+    </div>
+    <audio id="drawSound" src="your-sound-effect-file.mp3"></audio> <!-- 请替换为实际音效文件的路径 -->
+    <audio id="backgroundMusic" src="your-tension-music-file.mp3" loop></audio> <!-- 请替换为实际背景音乐文件的路径 -->
+    <script src="script.js"></script>
+</body>
+</html>

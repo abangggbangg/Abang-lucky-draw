@@ -1,0 +1,92 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    max-width: 90%; /* 限制容器的最大宽度 */
+    width: 1200px; /* 容器的固定宽度，确保在不同设备上显示一致 */
+}
+
+.prizes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.prize {
+    width: 18%; /* 每个奖品占据容器的18%宽度 */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.prize img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.prize-number {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 10px;
+    visibility: hidden; /* 隐藏号码，直到用户点击显示中奖号码 */
+    border: 2px dashed #007bff;
+    padding: 5px;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #ff3d2e;
+    transform: scale(1.05);
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    min-height: 30px;
+    color: #333;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .prizes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .prize {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 769px) {
+    .prizes {
+        flex-direction: row;
+    }
+}
